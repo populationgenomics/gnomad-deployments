@@ -22,7 +22,7 @@ patches:
         path: /spec/nodeSets
         value:
           - name: master
-            count: 3
+            count: 4
             config:  # https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html
               node.roles: ["master"]
               cluster.routing.allocation.disk.watermark.low: '100gb'
@@ -63,7 +63,7 @@ patches:
                     requests:
                       storage: 100Gi
           - name: coordinating-nodes
-            count: 3
+            count: 4
             config:  # https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html
               node.roles: []
               cluster.routing.allocation.disk.watermark.low: '100gb'
