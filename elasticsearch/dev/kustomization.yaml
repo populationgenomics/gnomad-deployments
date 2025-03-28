@@ -155,4 +155,4 @@ patches:
                   storageClassName: standard
                   resources:
                     requests:
-                      storage: 200Gi
+                      storage: 600Gi
