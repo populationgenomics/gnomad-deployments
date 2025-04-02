@@ -4,33 +4,5 @@ kind: Kustomization
 resources:
   - ../base
 patches:
-  - patch: |-
-      apiVersion: apps/v1
-      kind: StatefulSet
-      metadata:
-        name: redis
-      spec:
-        template:
-          spec:
-            containers:
-              - name: redis-server
-                resources:
-                  requests:
-                    memory: 8Gi
-                  limits:
-                    memory: 8Gi
-  - patch: |-
-      apiVersion: apps/v1
-      kind: StatefulSet
-      metadata:
-        name: redis
-      spec:
-        volumeClaimTemplates:
-          - metadata:
-              name: redis-data
-            spec:
-              accessModes:
-                - ReadWriteOnce
-              resources:
-                requests:
-                  storage: 30Gi
+  - path: ./memory-patch.yaml
+
