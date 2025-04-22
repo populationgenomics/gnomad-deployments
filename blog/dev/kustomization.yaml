@@ -6,7 +6,7 @@ resources:
 images:
   - name: gnomad-blog
     newName: australia-southeast1-docker.pkg.dev/ourdna-browser-dev/gnomad/gnomad-blog
-    newTag: '2126130'
+    newTag: '263df50'
   - name: gnomad-blog-auth
     newName: australia-southeast1-docker.pkg.dev/ourdna-browser-dev/gnomad/gnomad-blog-auth
-    newTag: '2126130'
+    newTag: '263df50'
