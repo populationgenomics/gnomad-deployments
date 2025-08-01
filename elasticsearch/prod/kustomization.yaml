@@ -105,7 +105,7 @@ patches:
                   - name: install-plugins
                     command: ['sh', '-c', 'bin/elasticsearch-plugin install --batch repository-gcs']
           - name: data-green
-            count: 4
+            count: 3
             config:  # https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html
               node.roles: ["data"]
               cluster.routing.allocation.disk.watermark.low: '100gb'
@@ -156,7 +156,7 @@ patches:
                   storageClassName: premium-rwo
                   resources:
                     requests:
-                      storage: 1750Gi
+                      storage: 600Gi
           # - name: ingest
           #   count: 48
           #   config:  # https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html
@@ -209,4 +209,4 @@ patches:
           #         storageClassName: premium-rwo
           #         resources:
           #           requests:
-          #             storage: 2000Gi
+          #             storage: 1000Gi
