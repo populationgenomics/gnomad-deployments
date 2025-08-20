@@ -5,8 +5,6 @@ resources:
   - ../base
 images:
   - name: gnomad-blog
-    newName: us-docker.pkg.dev/exac-gnomad/gnomad/gnomad-blog
-    newTag: 'f9c397c'
-  - name: gnomad-blog-auth
-    newName: us-docker.pkg.dev/exac-gnomad/gnomad/gnomad-blog-auth
-    newTag: 'f9c397c'
+    newName: australia-southeast1-docker.pkg.dev/ourdna-browser/gnomad/gnomad-blog
+    newTag: 'd529a38'
+

@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - ./blog.deployment.yaml
   - ./blog.service.yaml
-  - ./blog.oauth-secret.yaml
+  # - ./blog.oauth-secret.yaml

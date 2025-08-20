@@ -59,7 +59,7 @@ spec:
           lifecycle:
             postStart:
               exec:
-                command: ["gcsfuse", "-o", "allow_other", "--implicit-dirs", "cpg-ourdna-browser-dev-blog", "/usr/share/nginx/news"]
+                command: ["gcsfuse", "-o", "allow_other", "--implicit-dirs", "cpg-ourdna-browser-blog", "/usr/share/nginx/news"]
             preStop:
               exec:
                 command: ["fusermount", "-u", "/usr/share/nginx/news"]
